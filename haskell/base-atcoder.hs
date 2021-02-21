@@ -11,8 +11,6 @@ import           Control.Monad.State
 import qualified Data.ByteString.Char8      as BS
 import qualified Data.ByteString.Lazy.Char8 as BL
 import           Data.Char
-import           Data.HashMap.Strict        (HashMap)
-import qualified Data.HashMap.Strict        as H
 import           Data.List
 import           Data.Maybe
 import           Data.Vector.Unboxed        (Vector, (!))
