@@ -49,7 +49,7 @@ getUntil p = StateT $ \str ->
    in if B.null f then Nothing else Just (f, s)
 
 rInt :: Input Int
-rInt = StateT $ B.readInt . B.dropWhile isSpace
+rInt = spaces *> StateT B.readInt
 
 rDbl :: Input Double
 rDbl = atof <$> (spaces *> (dotted <|> digits))
